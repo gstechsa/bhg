@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <odoo>
     <template id="invoice_document_report_inherit" inherit_id="account.report_invoice_document">
-        <!--        <xpath expr="//t[@t-set='address']" position="inside">-->
-        <!--            <div t-attf-class="text-center" style="position: absolute; top: -1rem; left: -10rem;">-->
-        <!--                <img t-att-src="'/report/barcode/?type=%s&amp;value=%s&amp;width=%s&amp;height=%s' % ('QR', o.get_qr_code_data(), 350,350)" alt="qr"  style="height:150px"/>-->
-        <!--            </div>-->
-        <!--        </xpath>-->
+                <xpath expr="//t[@t-set='address']" position="inside">
+                    <div t-attf-class="text-center" style="position: absolute; top: -1rem; left: -10rem;">
+                        <img t-att-src="'/report/barcode/?type=%s&amp;value=%s&amp;width=%s&amp;height=%s' % ('QR', o.get_qr_code_data(), 350,350)" alt="qr"  style="height:150px"/>
+                    </div>
+                </xpath>
         <xpath expr="//div[hasclass('page')]/h2" position="replace">
             <div t-attf-class="text-center" style="font-size:20px;">
                 <span t-if="o.move_type in ('out_invoice', 'in_invoice') and o.state == 'posted'">Tax Invoice<br/></span>
