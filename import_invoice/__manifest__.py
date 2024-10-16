@@ -14,7 +14,7 @@
     odoo Import stock with Serial number import
     Import stock with lot number import
     import lot number with stock import
-    import serial number with stock import
+    import serial number mwith stock import
     import lines import
     import order lines import
     import orders lines import
