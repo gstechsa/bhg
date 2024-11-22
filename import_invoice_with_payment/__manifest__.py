@@ -3,7 +3,7 @@
 
 {
     "name" : "Import Invoice with Payment details in Odoo",
-    "version" : "15.0.0.3",
+    "version" : "17.0.0.0",
     "category" : "Accounting",
    'summary': 'Import paid Invoice Data App for import customer invoice paid invoice excel import vendor bills import paid invoices import validate invoice import invoice from excel import invoice with payment details import mass paid invoice import paid bulk invoices',
     "price": 10,
@@ -56,7 +56,7 @@ Importer la facture du fournisseur, importer les factures du fournisseur, import
     "data": [
         'security/ir.model.access.csv',
         "data/attachment_sample.xml",
-        'views/invoice_with_payment.xml'
+        # 'views/invoice_with_payment.xml'
     ],
     'qweb': [
     ],

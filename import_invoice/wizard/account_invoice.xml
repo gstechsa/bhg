@@ -37,8 +37,8 @@
                     <group>
                     <group string="Download Sample XLS and CSV Files">
                         <field name="down_samp_file" widget="checkbox" />
-                        <field name="sample_option" widget="radio" attrs="{'invisible': [('down_samp_file', '=', False)]}"/>
-                        <button name="download_auto" string="Download Sample File" type="object" class="oe_highlight" attrs="{'invisible': [('down_samp_file', '=', False)]}"/>
+                        <field name="sample_option" widget="radio" invisible="down_samp_file== False" />
+                        <button name="download_auto" string="Download Sample File" type="object" class="oe_highlight" invisible="down_samp_file == False"/>
                     </group>
                     </group>
                     <footer>

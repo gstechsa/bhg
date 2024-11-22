@@ -3,7 +3,7 @@
 
 {
     'name': 'Import Invoices from Excel or CSV File in odoo',
-    'version': '15.0.0.2',
+    'version': '17.0.0.0',
     'sequence': 11,
     'category': 'Accounting',
     'summary': 'Import Invoice Data App for import customer invoice import vendor bills import account invoice data import invoices import validate invoice import paid invoice excel import invoice from excel import invoice from csv import mass invoice import bulk invoices',
@@ -14,7 +14,7 @@
     odoo Import stock with Serial number import
     Import stock with lot number import
     import lot number with stock import
-    import serial number mwith stock import
+    import serial number with stock import
     import lines import
     import order lines import
     import orders lines import
@@ -87,7 +87,7 @@ Importer la facture du fournisseur, importer les factures du fournisseur, import
     'depends': ['base','account'],
     'data': [
             'security/ir.model.access.csv',  
-            'wizard/account_invoice.xml',
+            # 'wizard/account_invoice.xml',
             'data/attachment_sample.xml',
         ],
 	'qweb': [

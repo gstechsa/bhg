@@ -12,14 +12,14 @@
             				<field name="import_prod_option" widget='radio'/>
             			</group>
             			<group>
-            				<field name="partial_payment" widget='radio' attrs="{'invisible': [('stage','not in','payment')],}"/>
-                            <field name="writeoff_account" attrs="{'invisible': [('partial_payment','not in','writeoff')],}"/>
+            				<field name="partial_payment" widget='radio' invisible="stage not in 'payment'"/>
+                            <field name="writeoff_account" invisible="partial_payment not in 'writeoff'"/>
             			</group>
             		</group>             
             	</xpath>
                 <xpath expr="/form/group[5]" position="inside">
                     <group>
-                        <field name="allow_payment" attrs="{'invisible': [('stage','not in','payment')],}"/>
+                        <field name="allow_payment" invisible="stage 'not in''payment'"/>
                     </group>
                 </xpath>
             </field>

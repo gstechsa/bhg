@@ -8,7 +8,7 @@ import xlrd
 import io
 from odoo.tools import DEFAULT_SERVER_DATETIME_FORMAT, DEFAULT_SERVER_DATE_FORMAT
 from datetime import date, datetime
-from odoo.exceptions import Warning , UserError, ValidationError
+from odoo.exceptions import  UserError, ValidationError
 from odoo import models, fields, exceptions, api, _
 from collections import defaultdict
 

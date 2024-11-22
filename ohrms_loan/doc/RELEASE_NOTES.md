@@ -1,11 +1,11 @@
 ## Module <ohrms_loan>
 
-#### 18.10.2021
-#### Version 15.0.1.0.0
+#### 28.11.2023
+#### Version 17.0.1.0.0
 ##### ADD
-- Initial commit for Open HRMS Project
 
-#### 26.07.2022
-#### Version 15.0.1.1.0
-##### UPDATE
-- Change the PO file
+- Initial commit for Open HRMS Loan Management
+
+##### FIX 
+
+- Updated the Loan Smart button view and added the domain for the tree and form view

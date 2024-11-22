@@ -1,10 +1,10 @@
 # -*- coding: utf-8 -*-
-#############################################################################
+###############################################################################
 #
 #    Cybrosys Technologies Pvt. Ltd.
 #
-#    Copyright (C) 2021-TODAY Cybrosys Technologies(<https://www.cybrosys.com>).
-#    Author: Cybrosys Techno Solutions(odoo@cybrosys.com)
+#    Copyright (C) 2023-TODAY Cybrosys Technologies(<https://www.cybrosys.com>)
+#    Author: Cybrosys Techno Solutions (odoo@cybrosys.com)
 #
 #    You can modify it under the terms of the GNU AFFERO
 #    GENERAL PUBLIC LICENSE (AGPL v3), Version 3.
@@ -18,26 +18,29 @@
 #    (AGPL v3) along with this program.
 #    If not, see <http://www.gnu.org/licenses/>.
 #
-#############################################################################
-
+###############################################################################
 {
     'name': 'Employee Documents',
-    'version': '15.0.1.0.0',
+    'version': '17.0.1.0.0',
+    'category': 'Human Resources',
     'summary': """Manages Employee Documents With Expiry Notifications.""",
-    'description': """Manages Employee Related Documents with Expiry Notifications.""",
-    'category': 'Generic Modules/Human Resources',
+    'description': 'Manages Employee Related Documents'
+                   ' with Expiry Notifications.',
     'author': 'Cybrosys Techno Solutions',
     'company': 'Cybrosys Techno Solutions',
     'maintainer': 'Cybrosys Techno Solutions',
     'website': "https://www.cybrosys.com",
-    'depends': ['base', 'hr'],
+    'depends': ['hr'],
     'data': [
         'security/ir.model.access.csv',
-        'views/employee_check_list_view.xml',
-        'views/employee_document_view.xml',
+        'data/employee_checklist_data.xml',
+        'data/ir_cron_data.xml',
+        'views/employee_checklist_views.xml',
+        'views/hr_employee_document_views.xml',
+        'views/hr_employee_views.xml',
     ],
     'demo': ['data/data.xml'],
-    'images': ['static/description/banner.png'],
+    'images': ['static/description/banner.jpg'],
     'license': 'AGPL-3',
     'installable': True,
     'auto_install': False,
