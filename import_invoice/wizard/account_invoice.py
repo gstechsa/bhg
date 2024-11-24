@@ -57,6 +57,7 @@ class AccountMove(models.Model):
 
 class gen_inv(models.TransientModel):
     _name = "gen.invoice"
+    _description = 'Generate Invoices'
 
     file = fields.Binary('File')
     account_opt = fields.Selection([('default', 'Use Account From Configuration product/Property'), ('custom', 'Use Account From Excel/CSV')], string='Account Option', required=True, default='default')

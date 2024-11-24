@@ -62,8 +62,7 @@ class AccountMoveLine(models.Model):
 class gen_inv_inherit(models.TransientModel):
 	_inherit = "gen.invoice"
 
-	stage = fields.Selection(
-		[('draft', 'Import Draft Invoice'), ('confirm', 'Validate Invoice Automatically With Import'),('payment', 'Import Invoice with Payment')],
+	stage = fields.Selection(selection_add=[('payment', 'Import Invoice with Payment')],
 		string="Invoice Stage Option", default='draft')
 	partial_payment = fields.Selection(
 		[('keep','Keep Open'),('writeoff','Write-Off')],
